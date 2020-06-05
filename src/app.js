@@ -5,14 +5,12 @@ import 'normalize.css';
 
 import AppRouter from 'routers/AppRouter';
 
-const App = () => {
+export default function App() {
   return (
     <>
       <AppRouter />
     </>
   );
-};
+}
 
-export default App;
-
-export default render(<App />, document.querySelector('#app'));
+render(<App />, document.querySelector('#app'));
