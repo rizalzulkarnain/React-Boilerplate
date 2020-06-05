@@ -5,14 +5,14 @@ import 'normalize.css';
 
 import AppRouter from 'routers/AppRouter';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <AppRouter />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <AppRouter />
+    </>
+  );
+};
 
-render(<App />, document.querySelector('#app'));
+export default App;
+
+export default render(<App />, document.querySelector('#app'));
