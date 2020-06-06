@@ -1,16 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
 
-import 'normalize.css';
-
-import AppRouter from 'routers/AppRouter';
-
-export default function App() {
+const App = () => {
   return (
-    <>
-      <AppRouter />
-    </>
+    <div>
+      <h1>Welcome to ReactJS</h1>
+    </div>
   );
-}
+};
 
-render(<App />, document.querySelector('#app'));
+export default App;
