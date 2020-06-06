@@ -9,7 +9,7 @@ module.exports = (env) => {
   const plugins = [new Dotenv(), new webpack.HotModuleReplacementPlugin()];
 
   return {
-    entry: './src/app.js',
+    entry: './src/index.js',
     mode: isProduction ? 'production' : 'development',
     output: {
       path: path.resolve(__dirname, 'public'),
