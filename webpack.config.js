@@ -46,6 +46,13 @@ module.exports = (env) => {
       historyApiFallback: true, // this prevents the default browser full page refresh on form submission and link change
       port: 3000,
       hot: true, //enable hot module replacement feature
+      proxy: {
+        '/api': {
+          target: 'http://localhost:5000',
+          secure: false,
+          changeOrigin: true,
+        },
+      },
     },
     plugins: plugins,
     resolve: {
